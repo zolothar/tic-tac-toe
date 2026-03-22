@@ -13,3 +13,6 @@ class Board:
         for row in self.board:
             print("|".join(row))
             print("-" * 5)
+
+    def __str__(self):
+        return f"Объект игрового поля размером {self.field_size}x{self.field_size}"
